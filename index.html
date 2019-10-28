@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/navigation.js" defer></script>
+    <script type="module" src="js/slider.js" defer></script>
+    <script type="module" src="js/form.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="container">
+            <div class="menu">
+                <div class="logo"></div>
+                <button onclick="btnClick()" class="btn">Hire us</button>
+                <div class="burger">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="line">
+                    <div class="circle default">
+                        <span class="number">01</span>
+                        <span class="title">Home</span>
+                    </div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle default">
+                        <span class="number">02</span>
+                        <span class="title">Works</span>
+                    </div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle default">
+                        <span class="number">03</span>
+                        <span class="title">About</span>
+                    </div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle default">
+                        <span class="number">04</span>
+                        <span class="title">Contact</span>
+                    </div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle intermediate"></div>
+                    <div class="circle default">
+                        <span class="number">05</span>
+                        <span class="title">Hire us</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <div class="page page-cosmonaut">
+                    <div class="page-cosmonaut__top">
+                        <div class="content">
+                            <div class="title">Your next <br> interactive <br> experience</div>
+                            <button onclick="btnClick()" class="btn">Hire us</button>
+                        </div>
+                        <div class="cosmonaut"></div>
+                    </div>
+                    <div class="page-cosmonaut__footer">
+                        <div class="article">
+                            <div class="article__title">Metiew & Smith</div>
+                            <div class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="article__title">Fantasy interactive</div>
+                            <div class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="article__title">Paul & shark</div>
+                            <div class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page page-slider">
+                    <div class="wrapper">
+                        <div class="main-title">Selected work</div>
+                        <div class="slider">
+                            <div class="slider__item">
+                                <img src="./img/slides/slide_1.jpg">
+                                <div class="description">
+                                    <div class="title">Metiew & Smith</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <img src="./img/slides/slide_2.jpg">
+                                <div class="description">
+                                    <div class="title">Alex Nowak</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <img src="./img/slides/slide_3.jpg">
+                                <div class="description">
+                                    <div class="title">Victory</div>
+                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow left"></div>
+                        <div class="arrow right"></div>
+                    </div>
+                </div>
+                <div class="page page-about">
+                    <div class="content">
+                   <div class="title">
+                       We <br> believe in <br> passionate <br> people
+                       <div class="circle">
+                           <div class="rect"></div>
+                           <div class="rect little"></div>
+                           <div class="triangle"></div>
+                       </div>
+                   </div>
+                    <a href="#" class="link">Career</a>
+                    <div class="cards">
+                        <div class="cards__item">
+                            <span>Winners</span>
+                        </div>
+                        <div class="cards__item">
+                            <span>Philosophy</span>
+                        </div>
+                        <div class="cards__item">
+                            <span>History</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="girl"></div>
+                </div>
+                <div class="page page-map">
+                    <div class="point" title="Pawia 5,31-154 Kraków, Poland"></div>
+                    <div class="contacts">
+                        <div class="contacts__item">Pawia 5,31-154 Kraków, Poland</div>
+                        <div class="contacts__item">ouremail@gmail.com</div>
+                        <div class="contacts__item">+48 12 628 75 60</div>
+                        <div class="contacts__item">
+                            <button class="contacts__item behance"></button>
+                            <button class="contacts__item dribble"></button>
+                            <button class="contacts__item contact">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page page-job">
+                    <form class="form" id="form">
+                        <div class="title">
+                            You want us to do
+                            <div id="desTitle"></div>
+                        </div>
+                        <div class="jobs">
+                            <label class="checkbox">
+                                <input type="checkbox" value="App Design"/>
+                                <div class="text">App Design</div>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Graphic Design"/>
+                                <div class="text">Graphic Design</div>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Motion Design"/>
+                                <div class="text">Motion Design</div>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="UX Design"/>
+                                <div class="text">UX Design</div>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Webdesign"/>
+                                <div class="text">Webdesign</div>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Marketing"/>
+                                <div class="text">Marketing</div>
+                            </label>
+                        </div>
+                        <div class="info">
+                            <div class="form_group">
+                                <input name="name" type="text" id="name" autocomplete="off">
+                                <label for="name">Name</label>
+                                <div id="desName" class="description"></div>
+                            </div>
+                            <div class="form_group">
+                                <input name="email" type="text" id="email" autocomplete="off">
+                                <label for="email">Email</label>
+                                <div id="desEmail" class="description"></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backstage">
+        <div class="menu">
+            <div class="logo"></div>
+            <div class="burger">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav__item active">Home</div>
+            <div class="nav__item">Works</div>
+            <div class="nav__item">About</div>
+            <div class="nav__item">Contact</div>
+            <div class="nav__item">Hire us</div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

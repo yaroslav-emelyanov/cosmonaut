@@ -1,0 +1,155 @@
+.girl {
+  position: absolute;
+  right: 13%;
+  top: 50vh;
+  width: 392px;
+  height: 631px;
+  transform: translateY(-52%);
+  background: url("../img/about/girl.png") center center/contain no-repeat;
+}
+
+.page-about {
+  .content {
+    position: absolute;
+    left: 18.5%;
+    top: 50vh;
+    z-index: 2;
+    transform: translateY(-43%);
+    .link {
+      position: relative;
+      font: 14px PNB;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-left: 1%;
+      &::after {
+        content: url("../img/arrow.png");
+        position: absolute;
+        right: -67%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .title {
+    position: relative;
+    width: 576px;
+    font: 82px PNBl;
+    white-space: nowrap;
+    line-height: 72px;
+    letter-spacing: 2px;
+    margin-bottom: 7vh;
+  }
+  .circle {
+    position: absolute;
+    right: 41.8%;
+    top: 21.5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0f33ff;
+    transition: width 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), height 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    .rect {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      width: 9px;
+      height: 9px;
+      background-color: #0f33ff;
+      transition: transform 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      &.little {
+        left: auto;
+        bottom: auto;
+      }
+    }
+    .triangle {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-top: 7.5px solid transparent;
+      border-bottom: 7.5px solid transparent;
+      border-left: 7.5px solid #0f33ff;
+      transition: transform 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  margin-top: 8%;
+  margin-left: 1.5%;
+  &__item {
+    position: relative;
+    width: 30%;
+    height: 13vh;
+    margin-right: 30px;
+    border: 10px solid #0f33ff;
+    cursor: pointer;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: border .25s ease-in-out, transform 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.75s ease-in-out;
+    &:hover {
+      border-width: 0px;
+    }
+    &:first-child {
+      background: url("../img/about/1.png") center center/cover no-repeat;
+    }
+    &:nth-child(2) {
+      transition: border .25s ease-in-out, transform 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) .25s, opacity 0.75s ease-in-out .25s;
+      background: url("../img/about/2.png") center center/cover no-repeat;
+    }
+    &:last-child {
+      margin-right: 0;
+      transition: border .25s ease-in-out, transform 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s, opacity 0.75s ease-in-out .5s;
+      background: url("../img/about/3.png") center center/cover no-repeat;
+    }
+    span {
+      position: absolute;
+      left: 6%;
+      bottom: -18px;
+      font: 14px PNB;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-about {
+    .content {
+      left: 50%;
+      top: 50vh;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      .title {
+        transform: translateX(-12%) scale(0.75);
+        margin-bottom: 0;
+      }
+      .cards {
+        &__item {
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .girl {
+    right: 0;
+  }
+}
+
+
+@media screen and (max-width: 420px){
+  .page-about {
+    .content {
+      transform: translate(-50%, -50%) scale(0.8);
+      width: 100%;
+      .cards {
+        display: none;
+      }
+    }
+  }
+}

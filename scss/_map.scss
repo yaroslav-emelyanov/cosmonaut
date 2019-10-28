@@ -1,0 +1,89 @@
+.page-map {
+  height: 100vh;
+  background: url("../img/map/map.png") center center no-repeat;
+  .point {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    background-color: #0f33ff;
+    transform: translate(-245%, -18%);
+    cursor: pointer;
+    &:hover {
+      animation: blinkPoint 4s ease-in-out infinite;
+    }
+  }
+}
+
+.contacts {
+  position: absolute;
+  left: 58%;
+  top: 26%;
+  width: 300px;
+  height: 360px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px black;
+  @media screen and (max-width: 768px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__item {
+    margin-top: 18px;
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        height: 40px;
+        width: 133px;
+        border: none;
+        margin-top: 25px;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        &.behance {
+          margin-top: 5px;
+          background: url("../img/map/behance.png") center center no-repeat #1769ff;
+          &:hover {
+            background-color: #1661e1;
+          }
+        }
+        &.dribble {
+          background: url("../img/map/dribble.png") center center no-repeat #ea4c89;
+          &:hover {
+            background-color: #d7477b;
+          }
+        }
+        &.contact {
+          color: white;
+          background-color: #0f33ff;
+          text-transform: uppercase;
+          &:hover {
+            background-color: #0f2dd7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes blinkPoint {
+  0% {
+     border-width: 6px;
+  }
+  10% {
+    border-width: 20px;
+  }
+  20%, 100% {
+    border-width: 6px;
+  }
+}
